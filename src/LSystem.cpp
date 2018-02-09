@@ -31,7 +31,7 @@ void LSystem::generate() {
 
 
             case 'a':
-            newGen += "b-f+cfc+f-edfue-f+ddcfc+f+b//" ;
+                newGen += "b-f+cfc+f-edfue-f+ddcfc+f+b//" ;
                 break;
             case 'b':
                 newGen += "adfucfbufueuu-f-eu|fub|fcufua//";

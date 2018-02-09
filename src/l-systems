@@ -3,18 +3,19 @@
 
 axiom = a, theta = 90º
 
-                    case 'a':
-                    {newGen += "b-f+cfc+f-edfue-f+ddcfc+f+b//" ;
-                        break;
-                    case 'b':
-                    newGen += "adfucfbufueuu-f-eu|fub|fcufua//";
-                        break;
-                    case 'c':
-                    newGen += "|eu|fub-f+cufuaddfadfuc+f+bufue//";
-                        break;
-                    case 'e':
-                    newGen += "|cfb-f+b|fadfuaddfb-f+b|fc//";
-                        break;
+case 'a':
+newGen += "b-f+cfc+f-edfue-f+ddcfc+f+b//" ;
+break;
+case 'b':
+newGen += "adfucfbufueuu-f-eu|fub|fcufua//";
+break;
+case 'c':
+newGen += "|eu|fub-f+cufuaddfadfuc+f+bufue//";
+break;
+case 'e':
+newGen += "|cfb-f+b|fadfuaddfb-f+b|fc//";
+break;
+
 
 //------------------------------------------------
 // #2_ p. 12

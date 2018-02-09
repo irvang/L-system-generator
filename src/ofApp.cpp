@@ -142,17 +142,19 @@ void ofApp::myParser(const int & inKeyPressed, rotationMatrix & turtleMatrix, of
             turtleMatrix.popVectors();
             break;
             
-            //        case '1': {meshInFunction.setMode(OF_PRIMITIVE_LINE_LOOP);} break; // did not make much sense
+           
         case '1': meshInFunction.setMode(OF_PRIMITIVE_LINE_STRIP); break;
-        case '2': meshInFunction.setMode(OF_PRIMITIVE_LINE_STRIP_ADJACENCY); break;
-        case '3': meshInFunction.setMode(OF_PRIMITIVE_LINES); break;
-        case '4': meshInFunction.setMode(OF_PRIMITIVE_LINES_ADJACENCY); break;
+        case '2': meshInFunction.setMode(OF_PRIMITIVE_LINES); break;
+        case '3': meshInFunction.setMode(OF_PRIMITIVE_LINES_ADJACENCY); break;
+        case '4': meshInFunction.setMode(OF_PRIMITIVE_POINTS); break;
+        case '5': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLE_FAN); break;
+        case '6': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLE_STRIP); break;
+        case '7': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLE_STRIP_ADJACENCY); break;
+        case '8': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLES); break;
+            
+            //        case '1': {meshInFunction.setMode(OF_PRIMITIVE_LINE_LOOP);} break; // did not make much sense
+            //        case '2': meshInFunction.setMode(OF_PRIMITIVE_LINE_STRIP_ADJACENCY); break;//not doing anything
             //       case '6': {meshInFunction.setMode(OF_PRIMITIVE_PATCHES);} break; // never did anything
-        case '5': meshInFunction.setMode(OF_PRIMITIVE_POINTS); break;
-        case '6': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLE_FAN); break;
-        case '7': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLE_STRIP); break;
-        case '8': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLE_STRIP_ADJACENCY); break;
-        case '9': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLES); break;
             //           case '0': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLES_ADJACENCY); break;
             //    case '0': !dupVertexMesh; break;
     }
@@ -169,8 +171,8 @@ void ofApp::addVertex_n_color(ofMesh & _mesh, const ofVec3f & _coords, ofColor &
 
 void ofApp::addIndices(ofMesh & _mesh)
 {
-    _mesh.addIndex(_mesh.getNumVertices() -2);
-    _mesh.addIndex(_mesh.getNumVertices() -1);
+    _mesh.addIndex(_mesh.getNumVertices() - 2);
+    _mesh.addIndex(_mesh.getNumVertices() - 1);
 }
 
 //--------------------------------------------------------------
@@ -183,7 +185,7 @@ void ofApp::infoTextFunction (bool infoText) {
         stringstream ss;
         
         ss << "-Press space bar (2-3 times) and then press 's'"<<endl;
-        ss << "-Length of string: "<< lsys.currentLString.length() << '\n' <<endl;
+        ss << "-Length of string (drawing characters): "<< lsys.currentLString.length() << '\n' <<endl;
         
         ss <<"(s): Start - draw shape"<<endl;
         ss <<"(c): Clear" << endl;
@@ -191,7 +193,7 @@ void ofApp::infoTextFunction (bool infoText) {
         
         
         ss <<"(space bar): Next generation " <<endl;
-        ss <<"(0-10 ): Drawing modes" <<endl;
+        ss <<"(1-8 ): Drawing modes" <<endl;
         ss <<"(i): Show/hide info" << '\n' <<endl;
         
         ss <<"-Cam - rotate: click and drag" <<endl;
