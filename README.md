@@ -11,11 +11,12 @@ Example of the program as binary files (applications):
 To run the examples: extract file and double click on each example.
 
 
--In order to execute program from sources: 
+//----
+-In order to run source code: 
 
 a) Download and install openFrameworks from this page : http://openframeworks.cc/download/ . 
 
-b) Generate project, and use this folder as your source (no addons needed).
+b) Generate project, and use this folder as your source (you may replace src).
 
 -To set new L-system in program:
 
@@ -34,7 +35,8 @@ or
 https://en.wikipedia.org/wiki/L-system. 
 
 
-====Alphabet used works as follows:
+
+====Alphabet works as follows:
 
 'f' or 'h': move forward and draw
 
