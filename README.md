@@ -23,3 +23,32 @@ http://algorithmicbotany.org/papers/abop/abop.pdf
 or
 
 https://en.wikipedia.org/wiki/L-system. 
+
+
+Alphabet used is as follows:
+
+'f' or 'h': move forward and draw
+
+'g': move backwards and draw
+
+'F': move forward without drawing
+
+'G': move backwards without drawing
+
+'|': rotate 180 degrees
+
+'-': turn left
+
+'+': turn right
+
+'u': rotate up
+
+'d': rotate down
+
+'l': roll left
+
+'/': roll right
+
+'[':push matrix
+
+']': pop matrix
