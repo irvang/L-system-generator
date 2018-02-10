@@ -3,18 +3,21 @@
 Uses openFrameworks v. 0.9.8. 
 
 Example of the program as binary files (applications):
+
   -For Mac : http://irvingangulo.com/assets/l-system-generator-examples/examples-mac-l-system-generator.zip
 
   -For Windows: http://irvingangulo.com/assets/l-system-generator-examples/exmples-windows-l-system-generator.zip
 
+To run the examples: extract file and double click on each example.
 
--In order to run: 
+
+-In order to execute program from sources: 
 
 a) Download and install openFrameworks from this page : http://openframeworks.cc/download/ . 
 
 b) Generate project, and use this folder as your source (no addons needed).
 
--To set new L-system:
+-To set new L-system in program:
 
 a) On LSystem.cpp, line 5, set your starting axiom.
 
