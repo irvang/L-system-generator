@@ -12,17 +12,20 @@ void ofApp::setup()
     myMesh.addVertex(turtMa.curCoords);//first vertex.Program will break without because mesh.getNumVertices - 2 in 'f'
     myMesh.addColor(color);
     
-    cam.setDistance(20);
+	//====CAMERA
+    cam.setDistance(50);
     
     //====MATRIX SETTINGS
     theta = 90;
-    stepSize = .5;
+    stepSize = 1;
     turtMa.theta = theta;
     
     
     //    myMesh.setMode(OF_PRIMITIVE_LINE_STRIP_ADJACENCY);
     //    myMesh.addVertex(turtMa.curCoords);
     cout << "mesh.numVertices = "<<myMesh.getNumVertices() << endl;
+
+	ofSetFrameRate(60);//necessary on windows
 }
 
 //--------------------------------------------------------------
@@ -152,10 +155,10 @@ void ofApp::myParser(const int & inKeyPressed, rotationMatrix & turtleMatrix, of
         case '7': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLE_STRIP_ADJACENCY); break;
         case '8': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLES); break;
             
-            //        case '1': {meshInFunction.setMode(OF_PRIMITIVE_LINE_LOOP);} break; // did not make much sense
-            //        case '2': meshInFunction.setMode(OF_PRIMITIVE_LINE_STRIP_ADJACENCY); break;//not doing anything
-            //       case '6': {meshInFunction.setMode(OF_PRIMITIVE_PATCHES);} break; // never did anything
-            //           case '0': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLES_ADJACENCY); break;
+        case '9': {meshInFunction.setMode(OF_PRIMITIVE_LINE_LOOP);} break; // did not make much sense
+        case '0': meshInFunction.setMode(OF_PRIMITIVE_LINE_STRIP_ADJACENCY); break;//not doing anything
+        case '!': {meshInFunction.setMode(OF_PRIMITIVE_PATCHES);} break; // never did anything
+        case '@': meshInFunction.setMode(OF_PRIMITIVE_TRIANGLES_ADJACENCY); break;
             //    case '0': !dupVertexMesh; break;
     }
 }
@@ -193,7 +196,7 @@ void ofApp::infoTextFunction (bool infoText) {
         
         
         ss <<"(space bar): Next generation " <<endl;
-        ss <<"(1-8 ): Drawing modes" <<endl;
+        ss <<"(0-9, !, @ ): Drawing modes" <<endl;
         ss <<"(i): Show/hide info" << '\n' <<endl;
         
         ss <<"-Cam - rotate: click and drag" <<endl;

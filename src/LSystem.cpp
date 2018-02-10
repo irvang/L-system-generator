@@ -2,7 +2,7 @@
 
 //----------------------------------------------------------
 LSystem::LSystem() :
-startingString {"a"},
+startingString { "a" },
 newGen {""},
 currentLString {startingString}
 {
@@ -28,7 +28,7 @@ void LSystem::generate() {
 
         //  newGen = newGen + production
         //  adds whichever case is selected to the end of the string "newGen"
-
+        //====PASTE PRODUCTION RULES BELOW THIS LINE
 
             case 'a':
                 newGen += "b-f+cfc+f-edfue-f+ddcfc+f+b//" ;
@@ -43,7 +43,9 @@ void LSystem::generate() {
                 newGen += "|cfb-f+b|fadfuaddfb-f+b|fc//";
                 break;
 
-            // if no substitution is found, whatever is on "currentLString" at i is passed back to "newGen"
+        //====PASTE PRODUCTION RULES ABOVE THIS LINE
+        
+        // if no substitution is found, whatever is on "currentLString" at i is passed back to "newGen"
         default: newGen += currentLString[i];
             break;
         }

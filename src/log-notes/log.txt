@@ -1,0 +1,15 @@
+//====02/10/18
+-Added frame rate. Necessary for Windows.
+-Log and l-systems now inside a folder.
+
+//====05/19/17
+-Reinstated the push and pop in the matrix using two vectors instead of Arrayer. Deleted arrayer (and never really got to use it, might have been more intuitive.)
+-Now using values by reference in rotationMatrix::rotateMatrix
+-Created functions for ofApp::addVertex_n_color and ofApp:: addIndices
+
+//====EMSCRIPTEN
+
+-Source 'mypath to emsdk-portable'\emsdk_env.sh has to be run from within the folder where the project will be built. See ciso1 comment here https://forum.openframeworks.cc/t/emscripten-linux-of-0-9-0/21309
+
+may have helpful information:
+https://forum.openframeworks.cc/t/emscripten-error-while-using-addons-such-as-ofxtween/22247/6
