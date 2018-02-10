@@ -12,7 +12,7 @@ b) Generate project, and use this folder as your source (no addons needed).
 
 a) On LSystem.cpp, line 5, set your starting axiom.
 
-b) Set new rules below line 30.
+b) Set new rules below line 30 (see alphabet below). Each rule shold consist of a case, followed by a string and a break.
 
 c) Change theta (angle of turn) on ofApp.cpp, line 18.
 
@@ -25,7 +25,7 @@ or
 https://en.wikipedia.org/wiki/L-system. 
 
 
-Alphabet used is as follows:
+====Alphabet used is as follows:
 
 'f' or 'h': move forward and draw
 
