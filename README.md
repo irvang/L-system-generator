@@ -25,7 +25,7 @@ or
 https://en.wikipedia.org/wiki/L-system. 
 
 
-====Alphabet used is as follows:
+====Alphabet used works as follows:
 
 'f' or 'h': move forward and draw
 
