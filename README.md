@@ -4,9 +4,9 @@ Uses openFrameworks v. 0.9.8.
 
 //====Example of the program as binary files (applications):
 
-  -For Mac : http://irvingangulo.com/assets/l-system-generator-examples/examples-mac-l-system-generator.zip
+  -For Mac (file size: 66MB) : http://irvingangulo.com/assets/l-system-generator-examples/examples-mac-l-system-generator.zip
 
-  -For Windows: http://irvingangulo.com/assets/l-system-generator-examples/exmples-windows-l-system-generator.zip
+  -For Windows (file size: 20MB): http://irvingangulo.com/assets/l-system-generator-examples/exmples-windows-l-system-generator.zip
 
 To run the examples: extract file and double click on each example.
 
