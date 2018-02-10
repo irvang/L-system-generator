@@ -2,6 +2,12 @@
 
 Uses openFrameworks v. 0.9.8. 
 
+Example of the program as binary files (applications):
+  -For Mac : http://irvingangulo.com/assets/l-system-generator-examples/examples-mac-l-system-generator.zip
+
+  -For Windows: http://irvingangulo.com/assets/l-system-generator-examples/exmples-windows-l-system-generator.zip
+
+
 -In order to run: 
 
 a) Download and install openFrameworks from this page : http://openframeworks.cc/download/ . 
