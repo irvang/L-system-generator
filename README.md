@@ -2,7 +2,7 @@
 
 Uses openFrameworks v. 0.9.8. 
 
-Example of the program as binary files (applications):
+//====Example of the program as binary files (applications):
 
   -For Mac : http://irvingangulo.com/assets/l-system-generator-examples/examples-mac-l-system-generator.zip
 
@@ -11,8 +11,7 @@ Example of the program as binary files (applications):
 To run the examples: extract file and double click on each example.
 
 
-//----
--In order to run source code: 
+//====In order to run source code: 
 
 a) Download and install openFrameworks from this page : http://openframeworks.cc/download/ . 
 
@@ -36,7 +35,7 @@ https://en.wikipedia.org/wiki/L-system.
 
 
 
-====Alphabet works as follows:
+//====Alphabet works as follows:
 
 'f' or 'h': move forward and draw
 
